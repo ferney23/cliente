@@ -1,2 +1,2 @@
-web: gunicorn base_project.wsgi  --log-file -
+web: gunicorn agentes.wsgi  --log-file -
 
