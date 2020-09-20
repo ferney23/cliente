@@ -25,7 +25,7 @@ SECRET_KEY = '!vn1q84@&m73h$vbzpg9v^x(hp5ze2lrg=agd*u@2k^2d202x3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -102,7 +102,16 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS  = [
+     ' DELETE' ,
+     ' GET' ,
+     ' OPTIONS' ,
+     ' PATCH' ,
+     ' POST' ,
+     ' PUT' ,
+]
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
