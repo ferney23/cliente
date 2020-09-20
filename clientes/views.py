@@ -1,15 +1,14 @@
 import os
-import threading
+
 import random
-import time
-from datetime import datetime
+
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 
 from .models import (Menu,Factura,Mesa,Pedido,Platos,Cliente,Mesero)
 from .serializers import (ClienteSerializers,FacturaSerializers,MenuSerializers,
                           PedidoSerializers,MesaSerializers,PlatosSerializers,MeseroSerializers)
-import requests
+
 from rest_framework.response import Response
 
 """
